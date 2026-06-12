@@ -133,7 +133,7 @@ git push -u origin main
 
 2. プッシュが成功したら、CodeCommit コンソールでリポジトリの内容を確認してみましょう。
    - CodeCommit コンソールで `next-hello-ts-{ユーザー名}` リポジトリを開き、ファイルが表示されることを確認します。
-   - 確認したら、ClousShell を閉じます。
+   - 確認したら、CloudShell を閉じます。
 ---
 
 ### 8. Amplify ホスティングでアプリケーションを作成する
