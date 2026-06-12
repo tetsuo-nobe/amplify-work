@@ -2,8 +2,8 @@
 
 ## 概要
 
-このハンズオンでは、AWS Amplify を使用して Next.js アプリケーションをホスティングします。  
-GitHub のパブリックリポジトリからソースコードを取得し、AWS CodeCommit を経由して Amplify にデプロイする流れを体験します。
+このハンズオンでは、AWS Amplify を使用して Next.js のアプリケーションをホスティングします。  
+Next.js のシンプルなアプリケーションのコードを AWS CodeCommit のリポジトリに保存して AWS Amplify でアプリケーションとしてデプロイする流れを体験します。
 
 ## 前提条件
 
@@ -75,7 +75,7 @@ git clone https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/next-hell
 
 ### 4. GitHub のリポジトリからソースコードをクローンする
 
-1. CloudShell で以下のコマンドを実行し、GitHub のパブリックリポジトリからソースコードをクローンします。
+1. CloudShell で以下のコマンドを実行し、GitHub のパブリックリポジトリから Next.js アプリケーションのソースコードをクローンします。
 
 ```bash
 cd ~
@@ -89,7 +89,7 @@ git clone https://github.com/tetsuo-nobe/next-hello-ts.git next-hello-ts-github
 
 ### 5. GitHub のローカルリポジトリの内容を CodeCommit のローカルリポジトリにコピーする
 
-1. CloudShell で以下のコマンドを実行し、GitHub からクローンしたファイルを CodeCommit のローカルリポジトリにコピーします（`.git` ディレクトリは除外）。なお、{ユーザー名} の部分は適切な内容に置き換えてください。
+1. CloudShell で以下のコマンドを実行し、GitHub からクローンした Next.js アプリケーションのソースコードのファイルを CodeCommit のローカルリポジトリにコピーします（`.git` ディレクトリは除外）。なお、{ユーザー名} の部分は適切な内容に置き換えてください。
 
 
 ```bash
