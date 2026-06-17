@@ -59,17 +59,21 @@ git config --global init.defaultBranch main
 
 ### 3. CloudShell で CodeCommit のローカルリポジトリを作成する
 
-1. CloudShell で以下のコマンドを実行して、CodeCommit リポジトリをクローンします。{ユーザー名} の部分は適切な内容に置き換えてください。
+1. CloudShell で以下のコマンドを実行して、CodeCommit リポジトリをクローンします。(自分のID) の部分は適切な内容に置き換えてください。
 
 ```bash
 cd ~
 ```
 
 ```bash
-git clone https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/next-hello-ts-{ユーザー名}
+MYID=(自分のID)
 ```
 
-3. クローンが成功すると、`next-hello-ts-{ユーザー名}` ディレクトリが作成されます（空のリポジトリの警告が出ますが問題ありません）。
+```bash
+git clone https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/next-hello-ts-${MYID}
+```
+
+3. クローンが成功すると、`next-hello-ts-${MYID}` ディレクトリが作成されます（空のリポジトリの警告が出ますが問題ありません）。
 
 ---
 
@@ -97,13 +101,13 @@ cd ~/next-hello-ts-github
 ```
 
 ```bash
-cp -rp $(ls -A | grep -v "^.git$") ~/next-hello-ts-{ユーザー名}/
+cp -rp $(ls -A | grep -v "^.git$") ~/next-hello-ts-${MYID}/
 ```
 
 2. ファイルがコピーされたことを確認します。
 
 ```bash
-ls ~/next-hello-ts-{ユーザー名}
+ls ~/next-hello-ts-${MYID}
 ```
 
 ---
@@ -113,7 +117,7 @@ ls ~/next-hello-ts-{ユーザー名}
 1. CloudShell で以下のコマンドを実行し、ファイルをステージングしてコミットします。
 
 ```bash
-cd ~/next-hello-ts-{ユーザー名}
+cd ~/next-hello-ts-${MYID}
 ```
 
 ```bash
@@ -132,7 +136,7 @@ git push -u origin main
 ```
 
 2. プッシュが成功したら、CodeCommit コンソールでリポジトリの内容を確認してみましょう。
-   - CodeCommit コンソールで `next-hello-ts-{ユーザー名}` リポジトリを開き、ファイルが表示されることを確認します。
+   - CodeCommit コンソールで `next-hello-ts-${MYID}` リポジトリを開き、ファイルが表示されることを確認します。
    - 確認したら、CloudShell を閉じます。
 ---
 
@@ -142,7 +146,7 @@ git push -u origin main
 2. **「新しいアプリを作成」** をクリックします。
 3. Git プロバイダーの選択で **「CodeCommit」** を選択し、**「次へ」** をクリックします。
 4. リポジトリとブランチの設定を行います。
-   - リポジトリ: `next-hello-ts-{ユーザー名}`
+   - リポジトリ: `next-hello-ts-${MYID}`
    - ブランチ: `main`
 5. **「次へ」** をクリックします。
 6. ビルドの設定を確認します。
@@ -190,7 +194,7 @@ CloudShell で作成したローカルディレクトリを削除する場合は
 
 ```bash
 cd ~
-rm -rf next-hello-ts-{ユーザー名}
+rm -rf next-hello-ts-${MYID}
 rm -rf next-hello-ts-github
 ```
 
