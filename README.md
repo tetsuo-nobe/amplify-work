@@ -66,14 +66,14 @@ MYID=(自分のID)
 ```
 
 
-* 以下のコマンドを実行して、Git のユーザー情報を設定します。
+2. 以下のコマンドを実行して、Git のユーザー情報を設定します。
 
 ```bash
 git config --global user.email "dummy-${MYID}@example.com"
 git config --global user.name "${MYID}"
 ```
 
-* 以下のコマンドを実行して、Git が CodeCommit の認証に AWS CLI の認証情報を使うように設定します。
+3. 以下のコマンドを実行して、Git が CodeCommit の認証に AWS CLI の認証情報を使うように設定します。
 
 ```bash
 git config --global credential.helper '!aws codecommit credential-helper $@'
@@ -85,7 +85,7 @@ git config --global credential.UseHttpPath true
 git clone https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/next-hello-ts-${MYID}
 ```
 
-3. クローンが成功すると、`next-hello-ts-${MYID}` ディレクトリが作成されます（空のリポジトリの警告が出ますが問題ありません）。
+4. クローンが成功すると、`next-hello-ts-${MYID}` ディレクトリが作成されます（空のリポジトリの警告が出ますが問題ありません）。
 
 ---
 
