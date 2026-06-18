@@ -41,7 +41,7 @@ Next.js のシンプルなアプリケーションのコードを AWS CodeCommit
 
 ### 2. CloudShell でデフォルトブランチ名を変更する
 
-CodeCommit のデフォルトブランチ名は `master` ですが、このハンズオンでは `main` ブランチを使用します。  
+CodeCommit のデフォルトブランチ名に `main` ブランチを使用します。  
 CloudShell で以下のコマンドを実行して、デフォルトブランチ名を `main` に変更します。
 
 1. AWS マネジメントコンソールの左下にある **CloudShell** アイコンをクリックして CloudShell を起動します。
