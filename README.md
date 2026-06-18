@@ -105,7 +105,7 @@ git clone https://github.com/tetsuo-nobe/next-hello-ts.git next-hello-ts-github
 
 ### 5. GitHub のローカルリポジトリの内容を CodeCommit のローカルリポジトリにコピーする
 
-1. CloudShell で以下のコマンドを実行し、GitHub からクローンした Next.js アプリケーションのソースコードのファイルを CodeCommit のローカルリポジトリにコピーします（`.git` ディレクトリは除外）。なお、{ユーザー名} の部分は適切な内容に置き換えてください。
+1. CloudShell で以下のコマンドを実行し、GitHub からクローンした Next.js アプリケーションのソースコードのファイルを CodeCommit のローカルリポジトリにコピーします（`.git` ディレクトリは除外）。
 
 
 ```bash
